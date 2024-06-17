@@ -129,14 +129,14 @@ class PPO:
 
 def main():
     ################# Hyperparameters #################
-    # env_name = "LunarLander-v2"
+    env_name = "LunarLander-v2"
     # env_name = "CartPole-v1"
-    env_name = "Acrobot-v1"
+    #env_name = "Acrobot-v1"
     # creating environment
     # env = gym.make(env_name, render_mode='human')
     env = gym.make(env_name)
     state_dim = env.observation_space.shape[0]
-    action_dim = 3
+    action_dim = 4
     render = True
     solved_reward = 150                 # stop training if avg_reward > solved_reward
     log_interval = 20                   # print avg reward in the interval
